@@ -1,0 +1,20 @@
+[
+  {
+    "section": "General Reasoning",
+    "type": "mc",
+    "prompt": "What comes next in the sequence: A, B, C, ?",
+    "options": ["D", "E", "F", "G", "H"]
+  },
+  {
+    "section": "General Reasoning",
+    "type": "mc",
+    "prompt": "A guy is standing on the ground when he throws 2 cubes: A red cube is thrown directly up at 2 m/s. At the same instance, a blue cube is thrown up at 4m/s. After throwing both of the cubes up, a person balances a yellow cube on his head. During this time, he recites the preamble of the US Constitution. He successfully balances the yellow cube and completes the recitation of the preamble of the US Constitution. Assuming the cubes did not collide at all, and there is no wind. Where is the blue cube in relation to the red cube after he is finished talking?",
+    "options": [
+      "The blue cube is inside the red cube",
+      "The Blue cube and the Red cube are at the same height",
+      "The blue cube is above the red cube",
+      "The Red cube is inside the blue cube",
+      "The red cube is above the blue cube"
+    ]
+  }
+]
