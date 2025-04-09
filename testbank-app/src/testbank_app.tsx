@@ -1,11 +1,28 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const sections = [
-  { name: "General Reasoning", count: 5 },
-  { name: "Math", count: 5 },
-  { name: "Word Problem", count: 3 },
-  { name: "Real World Analysis", count: 4 },
-];
+    {
+      name: "General Reasoning",
+      count: 5,
+      instructions: "For this section focus on logic and deduction. Assume that this question takes place in real life. There is no error in the question, and all of the values given are the correct values for the question. Go through the question very carefully. "
+    },
+    {
+      name: "Math",
+      count: 5,
+      instructions: "No calculator is allowed or needed. Hardest questions are Calculus 3 Level."
+    },
+    {
+      name: "Word Problem",
+      count: 3,
+      instructions: "Interpret the text carefully. There will be 3 questions relating to the given problem. This is the hardest section."
+    },
+    {
+      name: "Real World Analysis",
+      count: 4,
+      instructions: "Use common sense and data interpretation. Think before answering."
+    }
+  ];
+  
 
 export default function TestbankApp() {
   const [step, setStep] = useState<number | "done">(0);
@@ -47,7 +64,7 @@ export default function TestbankApp() {
     } else if (currentSectionIndex + 1 < sections.length) {
       setCurrentSectionIndex(currentSectionIndex + 1);
       setCurrentQuestionIndex(0);
-      if (typeof step === "number") setStep(step + 2);
+      if (typeof step === "number") setStep(step + 1);
     } else {
       setStep("done");
     }
@@ -55,9 +72,13 @@ export default function TestbankApp() {
 
   const downloadCSV = () => {
     const header = "Name,Question Number,Answer,Time (s)\n";
-    const rows = responses.map(
-      (r) => `${name},${r.questionNumber},${r.answer},${r.time}`
-    );
+    const escapeCSV = (text: string) =>
+        `"${String(text).replace(/"/g, '""')}"`;
+      
+      const rows = responses.map(r =>
+        `${escapeCSV(name)},${r.questionNumber},${escapeCSV(r.answer)},${r.time}`
+      );
+      
     const blob = new Blob([header + rows.join("\n")], { type: "text/csv" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -83,11 +104,14 @@ export default function TestbankApp() {
     >
       {step === 0 && (
         <>
-          <h1>Welcome to the Test</h1>
+          <h1>Welcome to Intellibench</h1>
           <p>
             Please enter your name to begin. You will go through 4 sections of
-            questions. Each section will have its own instructions and you can
-            move freely within that section.
+            questions. This test is designed to be difficult,
+            so take your time, and think through each question.
+            Each section will have its own instructions and you can
+            move freely within that section only. This is a timed test,
+            so complete it in ONE SITTING. Good Luck!
           </p>
           <input
             value={name}
@@ -120,9 +144,8 @@ export default function TestbankApp() {
       {typeof step === "number" && step % 2 === 1 && step !== 0 && (
         <>
           <h2 style={{ textAlign: "center" }}>Section: {sections[currentSectionIndex].name}</h2>
-          <p style={{ textAlign: "center" }}>
-            Instructions for this section go here. You may move freely between
-            questions in this section.
+          <p style={{ textAlign: "center", whiteSpace: "pre-wrap" }}>
+            {sections[currentSectionIndex].instructions}
           </p>
           <button onClick={() => setStep(step + 1)}>Start Section</button>
         </>
@@ -177,7 +200,7 @@ export default function TestbankApp() {
                   };
                   setResponses(updated);
                 }}
-                style={{ width: "100%", padding: "10px", marginBottom: "20px" }}
+                style={{ width: "90%", padding: "10px", marginBottom: "20px" }}
               />
             )}
 

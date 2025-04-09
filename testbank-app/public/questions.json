@@ -21,7 +21,7 @@
     "section": "General Reasoning",
     "type":"mc",
     "prompt": "Mark makes a stack of 7 ham sandwiches (with no sauces or condiments) in the kitchen. These sandwiches consist of a slice of bread, then a slice of ham, ending with another slice of bread. Mark then immediately uses duct tape to stick the top surface of the uppermost sandwich to the bottom of his cane. The tape is placed on only the topmost side of the top slice of bread. He then walks to the living room holding his cane. So how many whole sandwiches are there now, in each room?",
-    "options": ["6 whole sandwiches in the kitchen, 0 whole sandwiches in the living room","6 whole sandwiches in the living room, 1 whole sandwich in the kitchen","0 whole sandwiches in the kitchen, 6 whole sandwiches in the living room","All 7 whole sandwiches in the kitchen"]
+    "options": ["6 whole sandwiches in the kitchen. 0 whole sandwiches in the living room","6 whole sandwiches in the living room. 1 whole sandwich in the kitchen","0 whole sandwiches in the kitchen. 6 whole sandwiches in the living room","All 7 whole sandwiches in the kitchen"]
   },
   {
     "section": "General Reasoning",
@@ -95,5 +95,11 @@
     "type":"mc",
     "prompt": "A farmer has been losing about 20% of their corn crop to corn borers each year. On average, this costs the farmer $10,000 per year in lost revenue. A new pesticide becomes available that promises to eliminate corn borers completely. The pesticide costs $2,000 per year to apply.The farmer decides to use the pesticide, and for the first two years, it works perfectly - no corn is lost to corn borers. How much money will the farmer likely save over 10 years by using this pesticide?",
     "options": ["Approximately $80,000","Probably very little or nothing","Approximately $20,000","Approximately $2,000","Approximately $10,0000"]
+  },
+  {
+    "section":"Real World Analysis",
+    "type":"mc",
+    "prompt": "Sandra is quiet and smart. She enjoys long walks alone and literature. She even writes poems to herself. We can't know for sure, but you need to pick one option out of the following that is more likely:",
+    "options":["Sandra is a librarian","Sandra is a nurse ","","",""]
   }
 ]
