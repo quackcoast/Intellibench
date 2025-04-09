@@ -106,12 +106,16 @@ export default function TestbankApp() {
         <>
           <h1>Welcome to Intellibench</h1>
           <p>
-            Please enter your name to begin. You will go through 4 sections of
-            questions. This test is designed to be difficult,
+            This test is designed to be difficult,
             so take your time, and think through each question.
+              
+            You will go through 4 sections of questions.
+            
             Each section will have its own instructions and you can
             move freely within that section only. This is a timed test,
-            so complete it in ONE SITTING. Good Luck!
+            so complete it in ONE SITTING.
+
+            Please enter your name to begin. 
           </p>
           <input
             value={name}
