@@ -2,19 +2,98 @@
   {
     "section": "General Reasoning",
     "type": "mc",
-    "prompt": "What comes next in the sequence: A, B, C, ?",
-    "options": ["D", "E", "F", "G", "H"]
+    "prompt": "Jim is driving northbound on a four-lane U.S. highway (two northbound lanes and two southbound lanes, connected by a median). He is in the leftmost northbound lane, adjacent to the median. All 4 total lanes are connected with no space in between. The highway crosses a river flowing eastward at 10 m/s. Jims car travels at 20 km/h when his waterproof gloves (less dense than water) fall off the roof of his car exactly at the bridges highest point. At that moment, A steady wind blows northward at 1 m/s. The bridge is 10 meters vertically above the river. No other vehicles are present. Question: Jim continues driving north for 10 minutes without stopping. Where will the gloves be relative to the center of the bridge? Pick the most realistic answer.",
+    "options": [">5 km eastward", "<1 km northward", "Between 1 and 3 km eastward", ">5 km westward", "Exactly 4 km eastward"]
   },
   {
     "section": "General Reasoning",
     "type": "mc",
     "prompt": "A guy is standing on the ground when he throws 2 cubes: A red cube is thrown directly up at 2 m/s. At the same instance, a blue cube is thrown up at 4m/s. After throwing both of the cubes up, a person balances a yellow cube on his head. During this time, he recites the preamble of the US Constitution. He successfully balances the yellow cube and completes the recitation of the preamble of the US Constitution. Assuming the cubes did not collide at all, and there is no wind. Where is the blue cube in relation to the red cube after he is finished talking?",
     "options": [
+      "The red cube is above the blue cube",
+      "The blue cube is above the red cube",
       "The blue cube is inside the red cube",
       "The Blue cube and the Red cube are at the same height",
-      "The blue cube is above the red cube",
-      "The Red cube is inside the blue cube",
-      "The red cube is above the blue cube"
+      "The Red cube is inside the blue cube"
     ]
+  },
+  {
+    "section": "General Reasoning",
+    "type":"mc",
+    "prompt": "Mark makes a stack of 7 ham sandwiches (with no sauces or condiments) in the kitchen. These sandwiches consist of a slice of bread, then a slice of ham, ending with another slice of bread. Mark then immediately uses duct tape to stick the top surface of the uppermost sandwich to the bottom of his cane. The tape is placed on only the topmost side of the top slice of bread. He then walks to the living room holding his cane. So how many whole sandwiches are there now, in each room?",
+    "options": ["6 whole sandwiches in the kitchen, 0 whole sandwiches in the living room","6 whole sandwiches in the living room, 1 whole sandwich in the kitchen","0 whole sandwiches in the kitchen, 6 whole sandwiches in the living room","All 7 whole sandwiches in the kitchen"]
+  },
+  {
+    "section": "General Reasoning",
+    "type":"mc",
+    "prompt": "A lady is sitting in the backseat of a taxi. The taxi is traveling north at 30 miles per hour (mph). She is looking outside the window, and there is a lightning strike. This startles her, and she drops her phone. The Taxi driver drives 100 more feet and then takes a right and drives east. He drives at a rate of 25 miles per hour (mph) for 30 more minutes and then drops the lady off at her stop. When the taxi driver reaches this destination, where is the phone in relation to the lady?",
+    "options":["a) The phone is over 20 miles west","b) The phone is within 100 feet of the lady","The phone is between 1 mile and 19 miles from the lady","The phone is over 20 miles east","The phone is between 100 feet and 1 mile from the lady"]
+  },
+  {
+    "section": "General Reasoning",
+    "type": "mc",
+    "prompt":"Psychologist: Psychotherapists who attempt to provide psychotherapy on radio or television talk shows are expected to do so in ways that entertain a broad audience. However, satisfying this demand is nearly always incompatible with providing high-quality psychological help. For this reason, psychotherapists should never provide psychotherapy on talk shows. Which one of the following principles must be assumed in order for the psychologists conclusion to be properly drawn?",
+    "options":["It is never appropriate for psychotherapists to attempt to entertain a broad audience","The context in which psychological help is presented has a greater impact on its quality than the nature of the advice that is given","Psychotherapy should never be provided in a context in which there is any chance that the therapy might be of less than high quality","Most members of radio and television talk show audiences are seeking entertainment rather than high-quality psychological help","Psychotherapists should never attempt to provide psychological help in a manner that makes it unlikely to be of high quality"]
+  },
+  {
+    "section": "Math",
+    "type": "short",
+    "prompt": "The lower bounds for the following integral are 4, and the upper bounds are 7: ∫(dx/(sqrt(x^2-8x+25)) Please answer the question with either the numerical decimal value or equivalent expression"
+  },
+  {
+    "section":"Math",
+    "type":"short",
+    "prompt": "A bowl in the shape of a perfect hemisphere is partially filled with water. The height from the bottom of the bowl to the water level is h. The radius of the bowl is a. Perform a triple integral to derive an equation for the volume of the region filled with water."
+  },
+  {
+    "section":"Math",
+    "type":"short",
+    "prompt": "Evaluate the following limit: lim (x->0) (1-e^(-x/2))/(ln(x+1)"
+  },
+  {
+    "section":"Math",
+    "type":"short",
+    "prompt": "Evaluate the following limit: lim(x->0) ((sinx)/x)^(1/x^2)"
+  },
+  {
+    "section":"Math",
+    "type":"short",
+    "prompt":"Find the maximum and minimum values, and their locations, of f(x,y,z) = y^2-10z subject to the constraint x^2+y^2+z^2 = 36"
+  },
+  {
+    "section":"Word Problem",
+    "type":"mc",
+    "prompt": "Mazzini, an Italian specialty restaurant, stays open every Monday to Saturday but is closed on all Sundays. On Mondays, only lunch is served, as well as on Tuesdays and Thursdays. On Wednesdays, Fridays, and Saturdays, just dinner is served. The restaurants floors are polished and plants are watered only on days that Quantum is open for business, which is according to the following schedule: Plants are watered two days each week, but never on consecutive days and never on the same day that floors are polished. Floors are polished on Monday and two other days each week, but never on consecutive days and never on the same day that plants are watered. Q1. According to a schedule, the restaurants floors are polished on either…",
+    "options":["Tuesday or Wednesday","Tuesday or Thursday","Wednesday or Thursday","Thursday or Friday","Thursday or Saturday"]
+  },
+  {
+    "section":"Word Problem",
+    "type":"mc",
+    "prompt": "Mazzini, an Italian specialty restaurant, stays open every Monday to Saturday but is closed on all Sundays. On Mondays, only lunch is served, as well as on Tuesdays and Thursdays. On Wednesdays, Fridays, and Saturdays, just dinner is served. The restaurants floors are polished and plants are watered only on days that Quantum is open for business, which is according to the following schedule: Plants are watered two days each week, but never on consecutive days and never on the same day that floors are polished. Floors are polished on Monday and two other days each week, but never on consecutive days and never on the same day that plants are watered. Q2. If dinner is served on the same day as plants are watered, which of the following is correct?",
+    "options":["Plants are watered on Tuesday.","Floors are polished on Thursday.","Plants are watered on Wednesday.","Floors are polished on Wednesday.","Plants are watered on Saturday."]
+  },
+  {
+    "section":"Word Problem",
+    "type":"mc",
+    "prompt": "Mazzini, an Italian specialty restaurant, stays open every Monday to Saturday but is closed on all Sundays. On Mondays, only lunch is served, as well as on Tuesdays and Thursdays. On Wednesdays, Fridays, and Saturdays, just dinner is served. The restaurants floors are polished and plants are watered only on days that Quantum is open for business, which is according to the following schedule: Plants are watered two days each week, but never on consecutive days and never on the same day that floors are polished. Floors are polished on Monday and two other days each week, but never on consecutive days and never on the same day that plants are watered. Q3.Assume that floors are polished on consecutive days, but all other scheduling policies are untampered. For how many of the days can it be determined whether plants are watered and floors are polished?",
+    "options":["two","three","four","five","six"]
+  },
+  {
+    "section":"Real World Analysis",
+    "type":"mc",
+    "prompt": "A grocery store wanted to lower costs. They observed that cashiers only served customers 60% of the time. Otherwise, they were idle, so they fired 40% of the cashiers. After a week of reducing the staff, they observed their cashiers again: Did they see: ",
+    "options":["close to zero idleness","close to 20% idleness","close to 40% idleness","close to 60% idleness", "close to 80% idleness"]
+  },
+  {
+    "section":"Real World Analysis",
+    "type":"mc",
+    "prompt": "Assume there is a software development project. We have calculated that it takes 100 days to complete the project if there are 10 developers working with the project full time. We want to complete the project in 25 days. How many developers do we need to achieve that?",
+    "options":["10 developers","40 developers","60 developers","This is a trick question","80 developers"]
+  },
+  {
+    "section":"Real World Analysis",
+    "type":"mc",
+    "prompt": "A farmer has been losing about 20% of their corn crop to corn borers each year. On average, this costs the farmer $10,000 per year in lost revenue. A new pesticide becomes available that promises to eliminate corn borers completely. The pesticide costs $2,000 per year to apply.The farmer decides to use the pesticide, and for the first two years, it works perfectly - no corn is lost to corn borers. How much money will the farmer likely save over 10 years by using this pesticide?",
+    "options": ["Approximately $80,000","Probably very little or nothing","Approximately $20,000","Approximately $2,000","Approximately $10,0000"]
   }
 ]
