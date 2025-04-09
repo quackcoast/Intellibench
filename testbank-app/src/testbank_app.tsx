@@ -108,9 +108,9 @@ export default function TestbankApp() {
           <p>
             This test is designed to be difficult,
             so take your time, and think through each question.
-              
+            <br></br>
             You will go through 4 sections of questions.
-            
+            <br></br>
             Each section will have its own instructions and you can
             move freely within that section only. This is a timed test,
             so complete it in ONE SITTING.
